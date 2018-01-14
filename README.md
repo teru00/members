@@ -8,7 +8,8 @@ Java version 1.8
 First, In your terminal, you can type following command.
 ```
 git clone <this repo>
-gradlew run
+./gradlew
+sh run.sh
 ```
 Next, open the browser application and type URL! (Chrome or FireFox)
 ```

@@ -24,27 +24,6 @@ xhr.onreadystatechange = function () {
 };
 xhr.send();
 
-// Validation
-var validator = new FormValidator('test-form', [{
-    name: 'name',
-    display: 'Username',
-    rules: 'required'
-}, {
-    name: 'email',
-    display: 'Email',
-    rules: 'valid_email'
-}], function(errors, event) {
-    if (errors.length > 0) {
-        var errorString = '';
-
-        for (var i = 0, errorLength = errors.length; i < errorLength; i++) {
-            errorString += errors[i].message + '<br />';
-        }
-
-        alert(errorString);
-    }
-});
-
 // Event Handler
 function create() {
     var form = document.getElementById("member-form");
